@@ -1,7 +1,10 @@
 {
   "name": "mvc_esri_angular",
   "description": "mvc_esri_angular",
-  "repository": "mvc_esri_angular",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jordanparfitt/mvc_esri_angular.git"
+  },
   "version": "1.0.0",
   "scripts": {},
   "license": "ISC",
