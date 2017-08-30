@@ -1,8 +1,4 @@
-﻿/**
- * System configuration for Angular samples
- * Adjust as necessary for your application needs.
- */
-(function (global) {
+﻿(function (global) {
     System.config({
         paths: {
             // paths serve as alias
@@ -21,6 +17,8 @@
             '@angular/http': 'npm:@angular/http/bundles/http.umd.js',
             '@angular/router': 'npm:@angular/router/bundles/router.umd.js',
             '@angular/forms': 'npm:@angular/forms/bundles/forms.umd.js',
+            'esri-loader': 'npm:esri-loader/src/esri-loader.js',
+            'angular2-esri-loader': 'npm:angular2-esri-loader/src/esri-loader.service.js',
             // other libraries
             'rxjs': 'npm:rxjs'
         },

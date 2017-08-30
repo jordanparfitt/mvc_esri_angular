@@ -288,6 +288,7 @@
   <ItemGroup>
     <TypeScriptCompile Include="Scripts\App\app.module.ts" />
     <TypeScriptCompile Include="Scripts\App\app.component.ts" />
+    <TypeScriptCompile Include="Scripts\App\esri.component.ts" />
     <TypeScriptCompile Include="Scripts\App\main.ts" />
   </ItemGroup>
   <ItemGroup>

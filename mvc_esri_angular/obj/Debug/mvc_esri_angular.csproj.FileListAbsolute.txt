@@ -161,3 +161,4 @@ D:\test_bed\mvc_esri_angular\mvc_esri_angular\bin\Microsoft.Owin.Security.Twitte
 D:\test_bed\mvc_esri_angular\mvc_esri_angular\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 D:\test_bed\mvc_esri_angular\mvc_esri_angular\obj\Debug\mvc_esri_angular.dll
 D:\test_bed\mvc_esri_angular\mvc_esri_angular\obj\Debug\mvc_esri_angular.pdb
+D:\test_bed\mvc_esri_angular\mvc_esri_angular\obj\Debug\mvc_esri_angular.csprojResolveAssemblyReference.cache
