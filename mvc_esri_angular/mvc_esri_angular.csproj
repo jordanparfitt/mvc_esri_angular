@@ -218,6 +218,7 @@
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\ai.0.22.9-build00167.js" />
     <Content Include="Scripts\ai.0.22.9-build00167.min.js" />
+    <Content Include="Scripts\App\esri\esri.component.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="ApplicationInsights.config">
@@ -286,9 +287,10 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
+    <TypeScriptCompile Include="arcgis-js-api.d.ts" />
     <TypeScriptCompile Include="Scripts\App\app.module.ts" />
     <TypeScriptCompile Include="Scripts\App\app.component.ts" />
-    <TypeScriptCompile Include="Scripts\App\esri.component.ts" />
+    <TypeScriptCompile Include="Scripts\App\esri\esri.component.ts" />
     <TypeScriptCompile Include="Scripts\App\main.ts" />
   </ItemGroup>
   <ItemGroup>

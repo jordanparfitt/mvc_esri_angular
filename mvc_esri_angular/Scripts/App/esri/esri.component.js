@@ -10,26 +10,26 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const core_1 = require("@angular/core");
-const angular2_esri_loader_1 = require("angular2-esri-loader");
+const router_1 = require("@angular/router");
 let EsriMapComponent = class EsriMapComponent {
-    constructor(esriLoader) {
-        this.esriLoader = esriLoader;
+    constructor(route) {
+        this.route = route;
     }
     ngOnInit() {
-        // only load the ArcGIS API for JavaScript when this component is loaded
-        return this.esriLoader.load({
-            // use a specific version of the API instead of the latest
-            url: '//js.arcgis.com/3.18/'
-        }).then(() => {
-            // load the map class needed to create a new map
-            this.esriLoader.loadModules(['esri/map']).then(([Map]) => {
-                // create the map at the DOM element in this component
-                this.map = new Map(this.mapEl.nativeElement, {
-                    center: [-118, 34.5],
-                    zoom: 8,
-                    basemap: 'dark-gray'
-                });
-            });
+        if (this.map) {
+            // map is already initialized
+            return;
+        }
+        // get the required esri classes from the route
+        const esriModules = this.route.snapshot.data['esriModules'];
+        this._createMap(esriModules);
+    }
+    // create a map at the root dom node of this component
+    _createMap([Map]) {
+        this.map = new Map(this.mapEl.nativeElement, {
+            center: [-118, 34.5],
+            zoom: 8,
+            basemap: 'dark-gray'
         });
     }
 };
@@ -43,7 +43,7 @@ EsriMapComponent = __decorate([
         templateUrl: './esri-map.component.html',
         styleUrls: ['./esri-map.component.css']
     }),
-    __metadata("design:paramtypes", [angular2_esri_loader_1.EsriLoaderService])
+    __metadata("design:paramtypes", [router_1.ActivatedRoute])
 ], EsriMapComponent);
 exports.EsriMapComponent = EsriMapComponent;
 //# sourceMappingURL=esri.component.js.map

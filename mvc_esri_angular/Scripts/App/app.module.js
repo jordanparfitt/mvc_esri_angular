@@ -10,7 +10,7 @@ const core_1 = require("@angular/core");
 const platform_browser_1 = require("@angular/platform-browser");
 const angular2_esri_loader_1 = require("angular2-esri-loader");
 const app_component_1 = require("./app.component");
-const esri_component_1 = require("./esri.component");
+const esri_component_1 = require("./esri/esri.component");
 let AppModule = class AppModule {
 };
 AppModule = __decorate([
