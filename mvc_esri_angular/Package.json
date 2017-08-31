@@ -6,7 +6,8 @@
     "url": "https://github.com/jordanparfitt/mvc_esri_angular.git"
   },
   "version": "1.0.0",
-  "scripts": {},
+  "scripts": {
+    "preinstall": "bower install"},
   "license": "ISC",
   "dependencies": {
     "@angular/common": "~2.4.8",
