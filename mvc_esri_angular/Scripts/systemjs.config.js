@@ -20,7 +20,9 @@
             'esri-loader': 'npm:esri-loader/src/esri-loader.js',
             'angular2-esri-loader': 'npm:angular2-esri-loader/src/esri-loader.service.js',
             // other libraries
-            'rxjs': 'npm:rxjs'
+            'rxjs': 'npm:rxjs',
+            'angular2-in-memory-web-api': 'npm:angular2-in-memory-web-api',
+            'esri': 'http://js.arcgis.com/4.4/esri'
         },
         // packages tells the System loader how to load when no filename and/or no extension
         packages: {

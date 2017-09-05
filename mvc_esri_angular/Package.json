@@ -7,7 +7,8 @@
   },
   "version": "1.0.0",
   "scripts": {
-    "preinstall": "bower install"},
+    "preinstall": "bower install"
+	},
   "license": "ISC",
   "dependencies": {
     "@angular/common": "~2.4.8",
@@ -21,7 +22,9 @@
     "@angular/upgrade": "~2.4.8",
     "@types/arcgis-js-api": "^4.4.0",
     "esri-loader": "^1.1.0",
+    "angular2-in-memory-web-api": "0.0.20",
     "angular2-esri-loader": "^1.0.0",
+	"esri-system-js": "1.0.0-beta.0",
     "bootstrap": "^3.3.7",
     "core-js": "^2.4.1",
     "reflect-metadata": "^0.1.8",

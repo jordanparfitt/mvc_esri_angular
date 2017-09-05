@@ -4,6 +4,42 @@
 
 <div class="jumbotron">
     <my-app>Loading...</my-app>
-    <br/>
-    <app-esri-map>mapping...</app-esri-map>
 </div>
+
+<br/>
+<br/>
+<br/>
+<app-esri-map>mapping...</app-esri-map>
+<script>
+    (function (window) {
+        window.esriLoadConfig = {
+            modules: [
+                'esri/Map',
+                'esri/views/MapView',
+                'esri/core/Collection',
+                'esri/layers/GraphicsLayer',
+                'esri/Graphic',
+                'esri/geometry/Point',
+                'esri/geometry/SpatialReference',
+                'esri/symbols/SimpleMarkerSymbol',
+                'esri/Color'
+            ]
+        };
+    }(window))
+</script>
+<script>
+    // into a System.js module called esri
+    console.log("Loading esri modules: ", esriLoadConfig.modules);
+    start = performance.now();
+    esriSystem.register(esriLoadConfig.modules, function () {
+        // then bootstrap application
+        end = performance.now();
+        time = end - start;
+        console.log('Loaded esri modules', time / 1000.0);
+     /*   System.import('app/main').then(function () {
+            console.log('app/main imported');
+        }, function (error) {
+            console.log("System import error:", error);
+        });*/
+    });
+</script>
